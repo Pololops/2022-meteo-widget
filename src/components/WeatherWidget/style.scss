@@ -1,6 +1,7 @@
 .widget {
 	position: relative;
-	font-family: 'Baloo Tammudu 2', cursive;
+	font-family: 'Baloo Tammudu 2', Verdana, sans-serif;
+	font-weight: 400;
 	color: white;
 	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
 	font-size: 1.2rem;
@@ -28,11 +29,13 @@
 		position: absolute;
 		left: 50px;
 		right: 50px;
-		bottom: -2.6rem;
+		bottom: -2.7rem;
+		height: 2.6rem;
 
 		& input {
 			width: 100%;
-    	box-sizing: border-box;
+			margin: 0;
+			box-sizing: border-box;
 			border: none;
 			padding: 0.6rem 1rem;
 			font-size: 1.1rem;
@@ -50,7 +53,7 @@
 
 	& .preloader {
 		left: 50%;
-    margin-left: -40px;
+		margin-left: -40px;
 	}
 
 	& p {
@@ -72,10 +75,12 @@
 	&__temperature {
 		font-size: 5rem;
 		font-weight: bold;
+		font-weight: 700;
 	}
 
 	&__temperature sup {
 		font-size: 1.5rem;
 		font-weight: bold;
+		font-weight: 700;
 	}
 }
