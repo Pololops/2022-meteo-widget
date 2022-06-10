@@ -6,7 +6,7 @@
 	font-size: 1.2rem;
 	line-height: 2rem;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	gap: 40px;
 	min-width: 300px;
@@ -48,8 +48,9 @@
 		}
 	}
 
-	.preloader {
-		margin-left: 80px;
+	& .preloader {
+		left: 50%;
+    margin-left: -40px;
 	}
 
 	& p {

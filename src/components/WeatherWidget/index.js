@@ -9,8 +9,8 @@ export default function WeatherWidget({ props }) {
 	const [inputValue, setInputValue] = useState('');
 	const [submitCity, setSubmitCity] = useState('');
 
-	const baseUrl = 'http://api.openweathermap.org/data/2.5/weather';
-	const apiKey = 'b113862a59f7321b7134bd6cea472560';
+	const baseUrl = process.env.REACT_APP_BASE_URL;
+	const apiKey = process.env.REACT_APP_API_KEY;
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
